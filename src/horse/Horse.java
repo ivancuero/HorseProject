@@ -65,7 +65,7 @@ public class Horse {
 	public void setBornCountry(String bornCountry) {
 		this.bornCountry = bornCountry;
 	}
-	
+	//Test
 	public String toString() {
 		return "Nombre: " + name + ", Raza: " + race + ", Peso: " + weight + ", Precio: $" + price + ", Enfermedad principal: " + mainSickness + "\nComida principal: " + mainMeal + ", Cantidad premios ganados: " + pricesWon + ", Nombre del padre: " + fatherName + ", País de Nacimiento: " + bornCountry;
 	}
