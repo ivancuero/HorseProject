@@ -6,6 +6,7 @@ import java.util.Scanner;
 import horse.Horse;
 import manager.HorseManager;
 
+@SuppressWarnings("LossyEncoding")
 public class MainMenu {
 	public static void main(String[] args) {
 		ArrayList<Horse> horses = new ArrayList<Horse>();
@@ -58,7 +59,7 @@ public class MainMenu {
 							break;
 					}
 				}
-				System.out.println("¡Información actualizada con éxito!");
+				System.out.println("Informacion actualizada con exito!");
 				break;
 			case 5:
 				totalSold += HorseManager.sellHorseStraw(horses, index);
@@ -67,15 +68,15 @@ public class MainMenu {
 				if(totalSold > 0)
 					System.out.println("Se ha vendido $" + totalSold + " en total.");	
 				else
-					System.out.println("No se ha vendido producto aún.");
+					System.out.println("No se ha vendido producto aï¿½n.");
 				break;
 			case 0:
-				System.out.println("Abandonando aplicación");
+				System.out.println("Abandonando aplicacion");
 				entrada.close();
 				System.exit(0);
 				break;
 			default:
-				System.out.println("Escoja una opción entre 0 y 13\n");
+				System.out.println("Escoja una opcion entre 0 y 13\n");
 				break;
 			}
 			System.out.println(menu);
